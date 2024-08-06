@@ -60,7 +60,7 @@ const AccordionItem = ({
 
 export const FAQs = () => {
   return (
-    <div className="bg-black bg-gradient-to-b from-[#5D2CAB] to-black py-[72] text-white sm:py-24">
+    <div className="bg-black bg-gradient-to-b from-[#3D2CA8] via-[#5D2CAB] to-black py-[72] text-white sm:py-24">
       <div className="container">
         <h2 className="mx-auto text-center text-5xl font-bold tracking-tighter sm:max-w-[648px] sm:text-6xl">
           Frequently Asked Questions
