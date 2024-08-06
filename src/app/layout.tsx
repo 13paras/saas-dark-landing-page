@@ -17,6 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      {/* added antialiased, it will show our font weights appropriately in browsers */}
       <body className={clsx(dmSans.className, "antialiased")}>{children}</body>
     </html>
   );
