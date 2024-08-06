@@ -12,6 +12,10 @@ const config: Config = {
         padding: "1rem",
         center: true,
       },
+      backgroundImage: {
+        "purple-gradient":
+          "linear-gradient(to bottom, #000, #200D42 34%, #4F21A1 65%, #A46EDB 82%)",
+      },
     },
   },
   plugins: [],
