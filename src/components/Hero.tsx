@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import ArrowIcon from "../assets/icons/arrow-w.svg";
 import cursorImage from "../assets/images/cursor.png";
 import messageImage from "../assets/images/message.png";
+import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
@@ -30,20 +33,35 @@ export const Hero = () => {
             <h1 className="inline-flex text-center text-7xl font-bold tracking-tighter sm:text-9xl">
               One Task <br /> at a Time
             </h1>
-            <Image
-              src={cursorImage}
-              alt="Cursor Image"
-              height={"200"}
-              width={"200"}
+            <motion.div
               className="absolute right-[477px] top-[108px] hidden sm:inline"
-            />
-            <Image
-              src={messageImage}
-              alt="Message Image"
-              height={"200"}
-              width={"200"}
+              drag
+              // also can comment dragsnaptoorigin remove, it will also give very cool effect
+              dragSnapToOrigin
+            >
+              <Image
+                src={cursorImage}
+                alt="Cursor Image"
+                height={"200"}
+                width={"200"}
+                className="max-w-none"
+                draggable={false}
+              />
+            </motion.div>
+            <motion.div
               className="absolute left-[498px] top-[56px] hidden sm:inline"
-            />
+              drag
+              dragSnapToOrigin
+            >
+              <Image
+                src={messageImage}
+                alt="Message Image"
+                height={"200"}
+                width={"200"}
+                className="max-w-none"
+                draggable={false}
+              />
+            </motion.div>
           </div>
         </div>
         <div className="flex justify-center">
